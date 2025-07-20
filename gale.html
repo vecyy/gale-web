@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gale & Mekatronik</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #d3d3d3, #fce4ec, #a0c4ff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0d1b2a;
+      padding: 20px 0;
+      color: #fff;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ff69b4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #87ceeb;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #f8c8dc, #c0c0c0, #a0c4ff);
+    }
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.2rem;
+      color: #0d1b2a;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      max-width: 600px;
+    }
+    .btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #87ceeb;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+    .feature {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+    .feature i {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #0d1b2a;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 60px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Gale Mekatronik</h2>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#fitur">Fitur</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>gale jelek jerawatan</h1>
+    <p>Situs ini adalah parodi penuh cinta tentang dunia mekatronik, programming, dan fakta menyakitkan 🥲</p>
+    <button class="btn">Mulai Ngejek Gale</button>
+  </section>
+
+  <section class="features" id="fitur">
+    <div class="feature">
+      <i class="fas fa-microchip"></i>
+      <h3>Embedded Systems</h3>
+      <p>Membuat sistem mikrokontroler yang bisa mendeteksi jerawat.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-code"></i>
+      <h3>Coding C++ & Python</h3>
+      <p>Mengatur robot untuk melacak wajah Gale secara otomatis.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-robot"></i>
+      <h3>Robotika</h3>
+      <p>Program robot untuk memberi tahu dunia bahwa Gale jerawatan.</p>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>&copy; 2025 Gale Corp. Semua jerawat dilindungi undang-undang. ✨</p>
+  </footer>
+
+</body>
+</html>
